@@ -1,0 +1,10 @@
+language: php
+
+env:
+  global:
+    - 'FTP_USER=labsroom'
+    - 'FTP_PASS=bismillah'
+
+script:
+  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/praktek-4c'"
+  - "curl -T halo.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"

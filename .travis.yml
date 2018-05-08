@@ -7,5 +7,5 @@ env:
     - 'FTP_PASS=Ali~123!'
 
 script:
-  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/praktek-4c'"
-  - "curl -T halo.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
+  - "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/praktek-4d'"
+  - "curl -T halo.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4d/"
